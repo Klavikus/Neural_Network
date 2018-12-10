@@ -6,7 +6,7 @@ class Perceptron:
         self.alpha = alpha
     def step(self, x):
         return 1 if x > 0 else 0
-    def fit(self, X, epochs = 10):
+    def fit(self, X, y, epochs = 10):
         X = np.c_[X, y, np.ones((X.shape[0]))]
         for epoch in np.arange(0, epochs):
             for (x, target) in zip(X, y):
