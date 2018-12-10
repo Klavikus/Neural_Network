@@ -21,3 +21,4 @@ class Perceptron:
             X = np.c_[X, np.ones((X.shape[0]))]
         
         return self.step(np.dot(X, self.W))
+#Олег лох
